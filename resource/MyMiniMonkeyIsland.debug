@@ -1,0 +1,83 @@
+LOCAZIONI
+LOC_1	Porto
+LOC_2	Bar del porto
+LOC_3	Nave
+LOC_4	Retro del bar
+LOC_5	House of Mojo
+LOC_6	Palazzo del governatore
+LOC_7	Fine	# nome standard per la locazione finale del gioco
+
+APERTURE
+APERT_1	Porta	Porta del porto	LOC_1	LOC_2
+APERT_2	Finestra	Passaggio	LOC_3	LOC_4
+APERT_6	Porta	Porta della House of Mojo	LOC_1	LOC_5
+APERT_3	Botola	Un passaggio segreto multidimensionale	LOC_5	LOC_6	# chiusa per default, aperta da un bottone o una leva, Dalla House of Mojo al palazzo del governatore (!)
+APERT_4	PassaggioSegreto	Un passaggio segreto per la fine	LOC_6	LOC_7	# Porta alla fine del gioco
+APERT_5	Porta	Porta del retro	LOC_2	LOC_4	# porta chiusa di default
+
+PERSONAGGI
+PERS_1	Guybrush Threepwood	LOC_1
+PERS_2	LeChuck	LOC_1
+PERS_3	Stan	LOC_1
+PERS_4	Elaine Marley	LOC_1
+PERS_5	Voodoo Lady	LOC_1
+
+SENTIMENTI
+PERS_1	INIMICIZIA	PERS_2
+PERS_2	INIMICIZIA	PERS_1
+PERS_1	AMICIZIA	PERS_3
+PERS_3	AMICIZIA	PERS_1
+PERS_1	AMORE	PERS_4
+PERS_4	AMICIZIA	PERS_1
+
+OGGETTI
+OGG_2	DischettoPerComputer	Dischetto del computer di Stan	Parla con Elaine	# questo messaggio apparira' quando il dischetto sara' usato con il computer
+OGG_4	Baule	Baule della nave
+OGG_8	Computer	Computer di Stan
+OGG_9	Lettera	Lettera del governatore	Non toccare mia figlia!	# messaggio della lettera
+OGG_11	Bottone	Bottone della nave	APERT_3	# il bottone apre la botola
+OGG_12	Pillola	Pillola per la vita (TM)	LOC_6	# la pillola, se ingerita, ti porta nel palazzo del governatore
+OGG_15	Chiave	Chiave del retro	APERT_5	# chiave che apre la porta del retro
+OGG_17	Tappeto	Tappeto di prova
+OGG_18	Libro	Libro di prova
+OGG_20	Leva	Leva di prova	APERT_4
+OGG_21	Cofanetto	Cofanetto di prova	OGG_18
+OGG_22	Computer	Computer di prova
+OGG_23	Mappa	Mappa di prova	Questa è una mappa di prova!
+OGG_24	Denaro	Denaro di prova
+OGG_25	Cassaforte	Cassaforte di prova
+OGG_26	Divano	Divano di prova
+OGG_27	Televisore	Televisore di prova
+OGG_28	Biglietto	Biglietto di prova	Questo è un biglietto di prova!
+OGG_29	Telefono	Telefono di prova	LOC_6
+OGG_30	CabinaTelefonica	Cabina Telefonica di prova	OGG_29
+OGG_31	Gettone	Gettone di prova
+
+INVENTARIO_PERSONAGGI
+OGG_12	PERS_1
+OGG_15	PERS_1
+
+LOCAZIONE_OGGETTI
+OGG_2	LOC_1
+OGG_4	LOC_1
+OGG_8	LOC_1
+OGG_11	LOC_1
+OGG_17	LOC_1
+OGG_20	LOC_1
+OGG_21	LOC_1
+OGG_22	LOC_1
+OGG_23	LOC_1
+OGG_24	LOC_1
+OGG_25	LOC_1
+OGG_26	LOC_1
+OGG_27	LOC_1
+OGG_28	LOC_1
+OGG_30	LOC_1
+OGG_31	LOC_1
+
+
+PROPRIETARI
+OGG_2	PERS_3
+OGG_4	PERS_2
+OGG_8	PERS_3
+

@@ -1,0 +1,71 @@
+LOCAZIONI
+LOC_1	Porto
+LOC_2	Bar del porto
+LOC_3	Nave
+LOC_4	Retro del bar
+LOC_5	House of Mojo
+LOC_6	Palazzo del governatore
+LOC_7	Fine	# nome standard per la locazione finale del gioco
+
+APERTURE
+APERT_1	Porta	Porta del porto	LOC_1	LOC_2
+APERT_2	Finestra	Passaggio	LOC_3	LOC_4
+APERT_6	Porta	Porta della House of Mojo	LOC_1	LOC_5
+APERT_3	Botola	Un passaggio segreto multidimensionale	LOC_5	LOC_6	# chiusa per default, aperta da un bottone o una leva, Dalla House of Mojo al palazzo del governatore (!)
+APERT_4	PassaggioSegreto	Un passaggio segreto per la fine	LOC_6	LOC_7	# Porta alla fine del gioco
+APERT_5	Porta	Porta del retro	LOC_2	LOC_4	# porta chiusa di default
+
+PERSONAGGI
+PERS_1	Guybrush Threepwood	LOC_1
+PERS_2	LeChuck	LOC_3
+PERS_3	Stan	LOC_4
+PERS_4	Elaine Marley	LOC_6
+PERS_5	Voodoo Lady	LOC_5
+
+SENTIMENTI
+PERS_1	INIMICIZIA	PERS_2
+PERS_2	INIMICIZIA	PERS_1
+PERS_1	AMICIZIA	PERS_3
+PERS_3	AMICIZIA	PERS_1
+PERS_1	AMORE	PERS_4
+PERS_4	AMICIZIA	PERS_1
+
+OGGETTI
+#OGG_1	Grog	Grog d'annata
+OGG_2	DischettoPerComputer	Dischetto del computer di Stan	Parla con Elaine	# questo messaggio apparira' quando il dischetto sara' usato con il computer
+#OGG_3	Lampadario	Lampadario del bar del porto
+OGG_4	Baule	Baule della nave
+#OGG_5	Cassetto	Cassetto della scrivania della nave
+#OGG_6	Scrivania	Scrivania della nave	OGG_5	# la scrivania contiene il cassetto
+#OGG_7	Vaso	Vaso del bar
+OGG_8	Computer	Computer di Stan
+OGG_9	Lettera	Lettera del governatore	Non toccare mia figlia!	# messaggio della lettera
+#OGG_10	Cestino	Cestino del bar	OGG_9	# il cestino contiene la lettera
+OGG_11	Bottone	Bottone della nave	APERT_3	# il bottone apre la botola
+OGG_12	Pillola	Pillola per la vita (TM)	LOC_6	# la pillola, se ingerita, ti porta nel palazzo del governatore
+#OGG_13	Matrioska	Matrioskina della voodoo lady	OGG_12	# la matrioska contiene un biglietto
+#OGG_14	Matrioska	Matrioska della voodoo lady	OGG_13	# la matrioska contiene un'altra matrioska
+OGG_15	Chiave	Chiave del retro	APERT_5	# chiave che apre la porta del retro
+#OGG_16	Boccale	Boccale di grog d'annata	OGG_1	# il boccale contiene il grog
+
+INVENTARIO_PERSONAGGI
+#OGG_16	PERS_1
+OGG_12	PERS_5
+#OGG_13	PERS_5
+#OGG_14	PERS_5
+
+LOCAZIONE_OGGETTI
+OGG_2	LOC_4
+#OGG_3	LOC_2
+OGG_4	LOC_3
+#OGG_6	LOC_3
+#OGG_7	LOC_2
+OGG_8	LOC_4
+#OGG_10	LOC_2
+OGG_11	LOC_3
+OGG_15	LOC_1
+
+PROPRIETARI
+OGG_2	PERS_3
+OGG_4	PERS_2
+OGG_8	PERS_3
